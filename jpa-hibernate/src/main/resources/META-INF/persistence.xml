@@ -17,7 +17,7 @@
             <property name="javax.persistence.jdbc.password" value="abcd1234"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL55Dialect"/>
             <!-- Hibernates automatic DB update -->
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 </persistence>
