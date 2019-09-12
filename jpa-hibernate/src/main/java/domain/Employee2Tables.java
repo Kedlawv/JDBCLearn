@@ -22,7 +22,7 @@ public class Employee2Tables {
     @Column(name = "pensja")
     private double salary;
 
-    
+
     @Column(table = "adresy", name = "miejscowosc")     //adding table argument in the column
     private String locality;                            //annotation will put that column in the
     //                                                  //@SecondaryTable
