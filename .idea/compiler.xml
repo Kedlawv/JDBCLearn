@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SDA.JDBC" />
         <module name="SDA_JDBC" />
         <module name="jpa-hibernate" />
       </profile>
@@ -13,6 +14,8 @@
     <bytecodeTargetLevel>
       <module name="JDBCLearn" target="8" />
       <module name="jpa-hibernate" target="8" />
+      <module name="jpahibernate" target="8" />
+      <module name="SDA.JDBC" target="8" />
       <module name="SDA_JDBC" target="8" />
     </bytecodeTargetLevel>
   </component>
