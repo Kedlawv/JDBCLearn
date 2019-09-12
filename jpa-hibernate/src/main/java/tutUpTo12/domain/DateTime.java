@@ -1,4 +1,4 @@
-package domain;
+package tutUpTo12.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,7 +8,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 
-@Entity
+//@Entity
 public class DateTime  {
 
     @Id

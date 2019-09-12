@@ -1,14 +1,28 @@
-package domain;
+package OneToOne.domain;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
+public class Address1to1 {
 
-@Embeddable
-public class Address {
+    @Id @GeneratedValue
+    private long id;
+
     private String locality;
     private String zipcode;
     private String street;
     private int streetNumber;
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getLocality() {
         return locality;

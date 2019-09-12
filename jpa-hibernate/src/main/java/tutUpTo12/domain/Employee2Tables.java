@@ -1,8 +1,8 @@
-package domain;
+package tutUpTo12.domain;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 @Table(name = "Pracownicy2Tabele")
 @SecondaryTable(name = "adresy", pkJoinColumns = @PrimaryKeyJoinColumn(name = "employeeID"))
 public class Employee2Tables {

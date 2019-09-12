@@ -1,24 +1,21 @@
-package domain;
+package OneToOne.domain;
 
-import javax.lang.model.element.VariableElement;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity
-public class EmployeeEmbeded {
+public class Employee1to1 {
 
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     private long id;
 
     private String firstName;
     private String lastName;
     private double salary;
 
-    @Embedded             // Address contains @Embeddable annotation instead of @Entity
-    private Address address;
+    @OneToOne
+    @JoinColumn(name = "addressId")
+    private Address1to1 address;
 
     public long getId() {
         return id;
@@ -52,11 +49,11 @@ public class EmployeeEmbeded {
         this.salary = salary;
     }
 
-    public Address getAddress() {
+    public Address1to1 getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(Address1to1 address) {
         this.address = address;
     }
 }

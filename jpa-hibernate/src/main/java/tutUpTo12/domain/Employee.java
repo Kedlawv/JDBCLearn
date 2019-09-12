@@ -1,4 +1,4 @@
-package domain;
+package tutUpTo12.domain;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

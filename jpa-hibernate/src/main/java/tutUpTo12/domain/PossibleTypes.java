@@ -1,4 +1,4 @@
-package domain;
+package tutUpTo12.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,7 +6,7 @@ import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-@Entity
+//@Entity
 public class PossibleTypes {
 
     @Id

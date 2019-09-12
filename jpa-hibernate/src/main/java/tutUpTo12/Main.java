@@ -1,6 +1,8 @@
-import domain.Address;
-import domain.Employee2Tables;
-import domain.EmployeeEmbeded;
+package tutUpTo12;
+
+import tutUpTo12.domain.Address;
+import tutUpTo12.domain.Employee2Tables;
+import tutUpTo12.domain.EmployeeEmbeded;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
