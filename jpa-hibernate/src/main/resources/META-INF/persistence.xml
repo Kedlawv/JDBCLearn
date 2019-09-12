@@ -15,7 +15,7 @@
                       value="jdbc:mysql://localhost:3306/mojabaza?serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="tutorial"/>
             <property name="javax.persistence.jdbc.password" value="abcd1234"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL55Dialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL57Dialect"/>
             <!-- Hibernates automatic DB update -->
             <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>

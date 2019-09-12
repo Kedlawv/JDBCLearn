@@ -1,4 +1,5 @@
 import domain.Employee;
+import domain.Employee2Tables;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -10,25 +11,22 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
 
-        EntityManagerFactory eMF = Persistence.createEntityManagerFactory("myDatabase");
+        EntityManagerFactory eMF = Persistence
+                .createEntityManagerFactory("myDatabase");
         EntityManager eM = eMF.createEntityManager();
 
-        Employee employee = new Employee();
-        //employee.setId(1L);
+        Employee2Tables employee = new Employee2Tables();
+
         employee.setFirstName("Jan");
         employee.setLastName("Nowak");
         employee.setSalary(3333.3);
-        employee.setSalary2(new BigDecimal(12345.6));
-
-        Employee employee2 = new Employee();
-        //employee2.setId(1L);
-        employee2.setFirstName("Robert");
-        employee2.setLastName("Bednarek");
-        employee2.setSalary(4444.4);
+        employee.setLocality("Warszawa");
+        employee.setZipcode("11-111");
+        employee.setStreet("Koszykowa");
+        employee.setStreetNumber(111);
 
         eM.getTransaction().begin(); // all operations on the DB must be inside a Transaction
-        eM.persist(employee);// a method of the EntityManager committing an object to the DB
-        eM.persist(employee2);
+        eM.persist(employee);// a method of the EntityManager setting an object to commit to the DB
         eM.getTransaction().commit();
 
 
