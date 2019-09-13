@@ -1,6 +1,6 @@
-package Trigger_Refresh;
+package Trigger_Refresh_Remove;
 
-import Trigger_Refresh.domain.EmployeeTR;
+import Trigger_Refresh_Remove.domain.EmployeeTR;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,8 +13,8 @@ public class Main_Trigger_Refresh_15 {
         EntityManager eM = eMF.createEntityManager();
 
         EmployeeTR employeeTR = new EmployeeTR();
-        employeeTR.setFirstName("Maciej");
-        employeeTR.setLastName("Mak");
+        employeeTR.setFirstName("Damian");
+        employeeTR.setLastName("Skasuj");
         employeeTR.setSalary(2020);
 
         eM.getTransaction().begin();
@@ -32,6 +32,10 @@ public class Main_Trigger_Refresh_15 {
         System.out.println("LN: " + employeeTR.getLastName());
         System.out.println("S: " + employeeTR.getSalary());
         System.out.println("Tx: " + employeeTR.getTax());
+
+        eM.getTransaction().begin();
+        eM.remove(employeeTR);
+        eM.getTransaction().commit();
 
         eM.close();
         eMF.close();

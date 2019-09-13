@@ -1,4 +1,4 @@
-package Trigger_Refresh.domain;
+package Trigger_Refresh_Remove.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
