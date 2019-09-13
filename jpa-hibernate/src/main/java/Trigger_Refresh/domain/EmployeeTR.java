@@ -1,23 +1,24 @@
-package tutUpTo12.domain;
+package Trigger_Refresh.domain;
 
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-//@Entity
-public class EmployeeEmbeded {
+@Entity
+public class EmployeeTR {
 
     @Id
     @GeneratedValue
     private long id;
-
     private String firstName;
     private String lastName;
     private double salary;
+    private double tax;
 
-    @Embedded             // AddressTR contains @Embeddable annotation instead of @Entity
-    private Address address;
+
+    public double getTax() {
+        return tax;
+    }
 
     public long getId() {
         return id;
@@ -49,13 +50,5 @@ public class EmployeeEmbeded {
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
     }
 }
