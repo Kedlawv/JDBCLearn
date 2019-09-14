@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 
 
-public class Main {
+public class OldJDBCMain {
     public static void main(String[] args) {
-        String dbURL = "jdbc:mysql://localhost:3306/sql_store?serverTimezone=UTC";
+        String dbURL = "jdbc:mysql://localhost:3306/mojabaza?serverTimezone=UTC";
         String user = "root";
         String password = "abc123";
 
