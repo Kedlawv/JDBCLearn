@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JDBCLearn.iml" filepath="$PROJECT_DIR$/.idea/JDBCLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/SDA_JDBC/SDA.JDBC.iml" filepath="$PROJECT_DIR$/SDA_JDBC/SDA.JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SDA_Hibernate/SDA_Hibernate.iml" filepath="$PROJECT_DIR$/SDA_Hibernate/SDA_Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/SDA_JDBC/SDA_JDBC.iml" filepath="$PROJECT_DIR$/SDA_JDBC/SDA_JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/jpa-hibernate/jpa-hibernate.iml" filepath="$PROJECT_DIR$/jpa-hibernate/jpa-hibernate.iml" />
     </modules>

@@ -11,6 +11,7 @@
     <modules>
         <module>jpa-hibernate</module>
         <module>SDA_JDBC</module>
+        <module>SDA_Hibernate</module>
     </modules>
 
     <dependencies>

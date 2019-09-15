@@ -18,7 +18,8 @@ public class JDBCRunDAO implements RunDAO {
                 .prepareStatement("insert into runs(id,name,start_date)" +
                         "values(?, ?, ?)");
         statement.setInt(1, run.getId());
-        statement.setString(2,run.getName() );
+        statement.setString(
+                2,run.getName() );
 
         java.sql.Date dateSQL = new java.sql.Date(run.getStartDate().getTime());
 
